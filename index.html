@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="抖音">
+    <meta name="description" content="">
+    <title>抖音短视频主界面</title>
+    <style>
+        html{/*继承浏览器的宽高*/
+            width: 100%;
+            height: 100%;
+        }
+        body{/*继承html的宽高*/
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+        }
+        .content{/*继承body的宽高*/
+            width: 100%;
+            height: 100%;
+        }
+        .video{
+            position:absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .btn{/*后加入定位属性飘的最高*/
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .videofile{/*继承video的宽高*/
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;/*替换元素，保持原有比例大小*/
+        }
+        .header{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .logo{
+            position: absolute;
+            top:10%;
+            left:10%;
+            width:98px;
+            height: 55px;
+            background-image: url("images/logo.png");
+        }
+        .text{
+            position: absolute;
+            top:45%;
+            right: 10%;
+            width: 450px;
+            height: 80px;
+            background-image: url("images/0.png");
+        }
+        .applist{
+            display: flex;
+            position: absolute;
+            top:65%;
+            right: 10%;
+            width: 320px;
+            height: 50px;  
+        }
+        .apk{
+            width: 130px;
+            height: 50px;
+            margin-right: 5px;
+            background-image: url("images/2.png");
+        }
+        .ios{
+            width: 130px;
+            height: 50px;
+            margin-right: 5px;
+            background-image: url("images/3.png");
+        }
+        .code{
+            width: 50px;
+            height: 50px;
+            background-image: url("images/1.png");
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="video">
+            <video src="video/bg.mp4" class="videofile" id="myvideo" autoplay="autoplay" muted></video>
+        </div>
+        <div class="header">
+            <div class="logo"></div>
+        </div>
+        <div class="btn">
+            <div class="text"></div>
+            <div class="applist">
+                <div class="apk"></div>
+                <div class="ios"></div>
+                <div class="code"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
